@@ -12,7 +12,7 @@ files:
       offset: 42
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: list(map(str.upper, words))
   text: |
     def task(words: list) -> list:
@@ -38,5 +38,8 @@ files:
   text: |
     ['GOLDENROD', 'PURPLE', 'SALMON', 'TURQUOISE', 'CYAN']
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Fri, 12 Nov 2021 09:58:18 UTC
 record: -1

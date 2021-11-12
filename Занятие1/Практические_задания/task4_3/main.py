@@ -1,5 +1,4 @@
-from itertools import repeat
-
+import itertools
 
 def task():
     my_floats = [
@@ -11,12 +10,11 @@ def task():
         8.884234235,
         4.575235346645
     ]
-    round(5.55, 1)
-    return list(map(round, my_floats, [2] * len(my_floats)))  # TODO заменить на repeat
+
+    # return list(map(round, my_floats, [2] * len(my_floats)))  # TODO заменить на repeat
+    return list(map(round, my_floats, repeat(2)))
+    # return list(map(repeat, round(my_floats, 2), ))
 
 
 if __name__ == "__main__":
     print(task())
-
-    r = round(5.55, 1)
-    print(r)

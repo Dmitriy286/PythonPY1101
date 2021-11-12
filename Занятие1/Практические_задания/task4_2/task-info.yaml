@@ -12,7 +12,7 @@ files:
       offset: 91
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: 'map(lambda x: x ** 2, filter(lambda x: x % 2 == 0,
       iterator_numbers))'
   - offset: 312
@@ -23,7 +23,7 @@ files:
       offset: 182
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: '_ in range(10):'
   - offset: 379
     length: 67
@@ -33,7 +33,7 @@ files:
       offset: 247
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: next(numbers))
   text: |
     from itertools import count
@@ -67,5 +67,8 @@ files:
     324
     400
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Fri, 12 Nov 2021 10:38:42 UTC
 record: -1

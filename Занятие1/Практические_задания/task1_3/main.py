@@ -11,10 +11,13 @@ def task(points: list) -> tuple:
     # for index, current_distance in enumerate(list_distances):
     #     if current_distance == max_distance:
     #         return points[index]
-    print(get_distance)
+    # print(get_distance)
     return max(points, key=get_distance)
 
+
 if __name__ == "__main__":
+
+
     pts = [
         (4.5, 3),
         (2.1, -1),

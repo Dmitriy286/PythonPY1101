@@ -3,7 +3,7 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 258
+  - offset: 229
     length: 49
     placeholder_text: '[2] * len(my_floats)))  # TODO заменить на repeat'
     initial_state:
@@ -11,7 +11,7 @@ files:
       offset: 240
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: repeat(2)))
   text: |
     from itertools import repeat
@@ -42,5 +42,11 @@ files:
   text: |
     [4.36, 6.09, 3.25, 9.78, 2.16, 8.88, 4.58]
   learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: Incorrect
+  time: Fri, 12 Nov 2021 11:25:16 UTC
+  expected: |
+    [4.36, 6.09, 3.25, 9.78, 2.16, 8.88, 4.58]
+  actual: <no output>
 record: -1
