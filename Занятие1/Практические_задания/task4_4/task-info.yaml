@@ -12,7 +12,7 @@ files:
       offset: 43
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: map(hex, numbers)
   - offset: 169
     length: 103
@@ -23,7 +23,7 @@ files:
       offset: 131
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: 'zip(numbers, hex_numbers):'
   text: |
     def task(numbers: list):
@@ -60,5 +60,8 @@ files:
     Число 14 -> 0xe
     Число 15 -> 0xf
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Fri, 12 Nov 2021 11:30:52 UTC
 record: -1
