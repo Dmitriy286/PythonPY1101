@@ -48,5 +48,30 @@ if __name__ == '__main__':
     endless_tuple()
 
 
-# лабораторное задание 1_3
-# лабораторное задание 2_1 - как происходит итерирование? Как склеивает методом join? Где там цикл?
+# 1 лабораторное задание 1_3
+# 2 лабораторное задание 2_1 - как происходит итерирование? Как склеивает методом join? Где там цикл?
+# 3:
+def try_except():
+    # while not int_.isdigit():
+    while True:
+        try:
+            input_ = input("Enter number: ")
+            int_ = int(input_)
+        except ValueError: # или Exception
+            print("Not number")
+        else:
+            print(int_)
+            return int_
+        finally:
+            print("Test")
+        # if str(input_).isdigit():
+        if not ValueError: # - ВОТ ЭТО ВЕРНО?????
+            break
+
+    print("Test_2")
+try_except()
+
+print("-" * 20)
+print("Next code")
+print("-" * 20)
+
