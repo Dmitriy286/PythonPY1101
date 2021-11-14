@@ -75,3 +75,17 @@ print("-" * 20)
 print("Next code")
 print("-" * 20)
 
+# 4 что это?:
+dict_ = {
+    "a": 1,
+    "b": 2,
+    "c": 3
+}
+print(dict_)
+print(dict_["b"])
+dict_["b"] = 1000
+print(dict_)
+dict_["a", "c"] = 2000, 3000
+print(dict_)
+print(dict_["a"])
+print(dict_["a", "c"])
