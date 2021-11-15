@@ -38,3 +38,74 @@ print(dict_["a"])
 print(dict_["a", "c"])
 dict_[1] = 7000
 print(dict_)
+
+def foo(bar=[]):
+    bar.append("baz")
+    return bar
+
+print(foo())
+print(foo())
+print(foo())
+
+def foo_2(bar=None):
+    if bar is None:
+        bar = []
+    bar.append("baz")
+    return bar
+
+print(foo_2())
+print(foo_2())
+print(foo_2())
+
+try:
+    l = ["a", "b"]
+    m = int(l[2])
+    print(m)
+except (ValueError, IndexError) as e:
+    print("Some except")
+    print(e)
+    
+prices = {
+    "apple": 80,
+    "orange": 100,
+    "pear": 70
+}
+
+print(prices)
+
+for fruit in prices:
+    print(fruit)
+
+for fruit in prices:
+    print(prices[fruit])
+
+for item in prices.items():
+    print(item)
+
+for fruit, price in prices.items():
+    print(fruit, price)
+
+for fruit, price in prices.items():
+    print("Фрукт", fruit, "cтоит = ", price)
+
+usd_to_rub = 72
+for fruit, price in prices.items():
+    print(f"Фрукт {fruit} cтоит = {price * usd_to_rub}")
+
+s1 = "a"
+s2 = "ab"
+s3 = "abc"
+s4 = "abcd"
+
+print(f"{s1:_>4}")
+print(f"{s2:_>4}")
+print(f"{s3:_<4}")
+print(f"{s4:_<4}")
+
+width = 10
+precision = 3
+value = 12.34567
+print(f"result: {value:0{width}.{precision}f}")
+
+value = 12.34567
+print(f"{value:.2f}")
