@@ -10,7 +10,12 @@ def last_gen():
 
 if __name__ == "__main__":
     my_last_gen = last_gen()
-
+    print(next(my_last_gen))
+    print(next(my_last_gen))
+    print(next(my_last_gen))
+    print(next(my_last_gen))
+    print(next(my_last_gen))
+    print(next(my_last_gen))
     # for перехватывает ваше исключение
-    for i in my_last_gen:
-        print(i)
+    # for i in my_last_gen:
+    #     print(i)

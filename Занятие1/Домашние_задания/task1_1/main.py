@@ -9,9 +9,12 @@ def pseudo_enumerate(any_sequence):
     print(index_list) # ПРОВЕРКА, ЧТО МЫ ВЫТАЩИЛИ ТО, ЧТО НУЖНО
     print(any_sequence) # ПРОВЕРКА, ЧТО В ФУНКЦИЮ ПЕРЕДАН НУЖНЫЙ СПИСОК
 
-    for i, b in zip(index_list, any_sequence): # С ПОМОЩЬЮ ФУНКЦИИ zip ОБЪЕДИНЯЕМ СПИСКИ ИНДЕКСОВ И ЗНАЧЕНИЙ
+
+# может, с iter() ???
+    for i, b in iter(zip(index_list, any_sequence)): # С ПОМОЩЬЮ ФУНКЦИИ zip ОБЪЕДИНЯЕМ СПИСКИ ИНДЕКСОВ И ЗНАЧЕНИЙ
         print(i, b)
         # return i, b
+
 def proof():
     list_1 = [1, 2, "d", 4]
     try:
