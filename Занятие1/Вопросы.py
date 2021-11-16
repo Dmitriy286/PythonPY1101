@@ -89,3 +89,5 @@ dict_["a", "c"] = 2000, 3000
 print(dict_)
 print(dict_["a"])
 print(dict_["a", "c"])
+
+# 5 псевдо-enumerate (задание 1_1 в Д/З)
