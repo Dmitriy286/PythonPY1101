@@ -3,7 +3,7 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 198
+  - offset: 202
     length: 57
     placeholder_text: '...)  # TODO отфильтровать только буквы нижнего регистра'
     initial_state:

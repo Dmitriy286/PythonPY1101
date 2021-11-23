@@ -1,7 +1,7 @@
 def task(camel_case_str: str) -> str:
     char = filter(str.islower, camel_case_str)
-    print(next(char))
-    print(next(char))
+    # print(next(char))
+    # print(next(char))
     # print(next(char))
     # print(next(char))
 

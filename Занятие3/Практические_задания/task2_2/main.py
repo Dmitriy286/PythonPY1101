@@ -3,6 +3,7 @@ import json
 OUTPUT_FILE = "output.json"
 INPUT_FILE = "input.json"
 
+NEW_FILE = "newfile.json"
 
 def from_json_file():
     with open(INPUT_FILE) as f:
@@ -17,6 +18,6 @@ def to_json_file(python_object):
 
 if __name__ == "__main__":
     python_obj = from_json_file()
-    print(python_obj)  # TODO распечатать объект как JSON строку с отступами и кодировкой
+    print(json.dumps(python_obj, ensure_ascii=False, indent=4))  # TODO распечатать объект как JSON строку с отступами и кодировкой
 
     to_json_file(python_obj)

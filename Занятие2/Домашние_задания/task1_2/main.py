@@ -1,7 +1,5 @@
 def flatten(list_of_lists: list):
-    for inside_list in list_of_lists:
-        for value in inside_list:
-            yield value
+
 
 
 if __name__ == "__main__":
@@ -13,3 +11,5 @@ if __name__ == "__main__":
 
     for ceil in flatten(matrix):
         print(ceil)
+
+#

@@ -48,8 +48,8 @@ if __name__ == '__main__':
     endless_tuple()
 
 
-# 1 лабораторное задание 1_3
-# 2 лабораторное задание 2_1 - как происходит итерирование? Как склеивает методом join? Где там цикл?
+# fixme 1 лабораторное задание 1_3
+
 # 3:
 def try_except():
     # while not int_.isdigit():
@@ -65,7 +65,7 @@ def try_except():
         finally:
             print("Test")
         # if str(input_).isdigit():
-        if not ValueError: # - ВОТ ЭТО ВЕРНО?????
+        if not Exception: # - ВОТ ЭТО ВЕРНО?????
             break
 
     print("Test_2")
@@ -74,6 +74,28 @@ try_except()
 print("-" * 20)
 print("Next code")
 print("-" * 20)
+
+
+
+
+
+# _________________________
+# Занятие 2. д/з. 1_2, 1_3, 3_1 - нет заданияю 1_4 - задание не ясно (1 и 1_5 сделаны)/ 3_2 сделан
+
+# Зачем это?   gen = generator(10, 2)
+def generator(a, b):
+    yield a
+    while True:
+        a *= b
+        yield a
+
+if __name__ == "__main__":
+    # gen = generator(10, 2)
+    for i in range(10):
+        print(next(generator(10, 2)))
+        # if i > 100000:
+        #     break
+
 
 # 4 что это?:
 dict_ = {
@@ -89,23 +111,3 @@ dict_["a", "c"] = 2000, 3000
 print(dict_)
 print(dict_["a"])
 print(dict_["a", "c"])
-
-# 5 псевдо-enumerate (задание 1_1 в Д/З)
-
-
-#_________________________
-#Занятие 2. д/з. 1_2, 1_3, 3_1 - нет заданияю 1_4 - задание не ясно (1 и 1_5 сделаны)
-
-# Зачем это?   gen = generator(10, 2)
-def generator(a, b):
-    yield a
-    while True:
-        a *= b
-        yield a
-
-if __name__ == "__main__":
-    gen = generator(10, 2)
-    for i in range(10):
-        print(next(gen))
-        # if i > 100000:
-        #     break
