@@ -1,6 +1,7 @@
 from itertools import count
 
 def generator(a, b):
+    yield a
     while True:
         a *= b
         yield a

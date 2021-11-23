@@ -95,3 +95,17 @@ print(dict_["a", "c"])
 
 #_________________________
 #Занятие 2. д/з. 1_2, 1_3, 3_1 - нет заданияю 1_4 - задание не ясно (1 и 1_5 сделаны)
+
+# Зачем это?   gen = generator(10, 2)
+def generator(a, b):
+    yield a
+    while True:
+        a *= b
+        yield a
+
+if __name__ == "__main__":
+    gen = generator(10, 2)
+    for i in range(10):
+        print(next(gen))
+        # if i > 100000:
+        #     break
