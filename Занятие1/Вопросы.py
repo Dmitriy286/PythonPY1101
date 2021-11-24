@@ -51,63 +51,41 @@ if __name__ == '__main__':
 # fixme 1 лабораторное задание 1_3
 
 # 3:
-def try_except():
-    # while not int_.isdigit():
-    while True:
-        try:
-            input_ = input("Enter number: ")
-            int_ = int(input_)
-        except ValueError: # или Exception
-            print("Not number")
-        else:
-            print(int_)
-            return int_
-        finally:
-            print("Test")
-        # if str(input_).isdigit():
-        if not Exception: # - ВОТ ЭТО ВЕРНО?????
-            break
-
-    print("Test_2")
-try_except()
+# def try_except():
+#     # while not int_.isdigit():
+#     while True:
+#         try:
+#             input_ = input("Enter number: ")
+#             int_ = int(input_)
+#         except ValueError: # или Exception
+#             print("Not number")
+#         else:
+#             print(int_)
+#             return int_
+#         finally:
+#             print("Test")
+#         # if str(input_).isdigit():
+#         if not ValueError: # - ВОТ ЭТО ВЕРНО?????
+#             break
+#
+#     print("Test_2")
+# try_except()
 
 print("-" * 20)
 print("Next code")
 print("-" * 20)
 
 
+k = 3
+list_ = [1, 2, 3, 4, 5, 6, 7, 8]
+print(list_[k*0:k*1])
+print(list_[k*1:k*2])
+print(list_[k*2:k*3])
+# [k*i:k*(i+1)]
 
 
 
 # _________________________
-# Занятие 2. д/з. 1_2, 1_3, 3_1 - нет заданияю 1_4 - задание не ясно (1 и 1_5 сделаны)/ 3_2 сделан
+# Занятие 2. д/з. 1_2, 3_1 - нет заданияю 1_4 -
+# задание не ясно (1, 1_3, 1_5 сделаны)/ 3_2 сделан
 
-# Зачем это?   gen = generator(10, 2)
-def generator(a, b):
-    yield a
-    while True:
-        a *= b
-        yield a
-
-if __name__ == "__main__":
-    # gen = generator(10, 2)
-    for i in range(10):
-        print(next(generator(10, 2)))
-        # if i > 100000:
-        #     break
-
-
-# 4 что это?:
-dict_ = {
-    "a": 1,
-    "b": 2,
-    "c": 3
-}
-print(dict_)
-print(dict_["b"])
-dict_["b"] = 1000
-print(dict_)
-dict_["a", "c"] = 2000, 3000
-print(dict_)
-print(dict_["a"])
-print(dict_["a", "c"])

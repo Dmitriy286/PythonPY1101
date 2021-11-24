@@ -12,4 +12,4 @@ if __name__ == "__main__":
     for ceil in flatten(matrix):
         print(ceil)
 
-#
+
