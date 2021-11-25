@@ -25,8 +25,14 @@
 #     """
 
 def sub_list_gen(src_list: list, k: int):
+    a = len(src_list) // k
+    b = len(src_list) % k
+    if b == 0:
+        number_of_iterations = a
+    else:
+        number_of_iterations = a + 1
 
-    for i in range(k):
+    for i in range(number_of_iterations):
         new_list = src_list[k*i:k*(i+1)]
         yield new_list
 
