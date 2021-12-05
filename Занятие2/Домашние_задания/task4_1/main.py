@@ -24,4 +24,4 @@ if __name__ == "__main__":
     a = task(pts)
     answer = length_main(a)
     print(answer)
-
+#fixme

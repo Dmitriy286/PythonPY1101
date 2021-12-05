@@ -3,8 +3,8 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 58
-    length: 66
+  - offset: 5
+    length: 68
     placeholder_text: '# TODO считать содержимое JSON файла'
     initial_state:
       length: 36
@@ -15,7 +15,7 @@ files:
     encrypted_possible_answer: |-
       with open(filename) as f:
               json_data = json.load(f)
-  - offset: 169
+  - offset: 122
     length: 168
     placeholder_text: '...  # TODO записать выражение-генератор возвращающее значение
       по ключу contains_improvement_appeals'
@@ -1258,5 +1258,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: Mon, 29 Nov 2021 10:26:55 UTC
+  time: Sun, 05 Dec 2021 12:14:27 UTC
 record: -1
