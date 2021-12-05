@@ -1,22 +1,23 @@
 def decorator(fn):
     def wrapper(*args, **kwargs):
-        result = fn(*args, **kwargs)
-        print(result)
-        iter_or_not = (i for i in args)
-        try:
-            iter(next(iter_or_not))
-            print("Аргумент - итерируемый объект")
 
-        except:
-            raise TypeError("Объект <название или номер позиционного аргумента> "
-                            "<значение аргумента> не является итерируемым")
+        for i, j in enumerate(args):
+            if iter(item for item in j):
+
+                res = fn(*args, **kwargs)
+                return res
+
+            else:
+                raise TypeError(f"Объект {i} {j} не является итерируемым")
     return wrapper
 
 @decorator
-def func_1(a, b, c):
-    print(a, b, c)
+def func_1(a, b, c, d, e):
+    print(a, b, c, d, e)
 
 if __name__ == "__main__":
-    func_1(1, [1, 2, 3], [3, 4, 5])
-    print(type(func_1))
+    func_1(1, [1, 2, 3], [3, 4, 5], key1=3, key2=[7, 8, 9])
+
+    #fixme
+
 
