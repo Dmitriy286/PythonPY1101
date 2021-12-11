@@ -8,6 +8,19 @@ ip4 = re.compile(r"""
 """, re.VERBOSE)
 
 
+
+# Записать регулярку для поиска адреса IPv4.
+
+
+
+
+
+#
+# ipv4 = re.compile(r"\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}")
+#
+#
+# # 192.168.255.255
+
 if __name__ == "__main__":
     # Write your solution here
     pass
